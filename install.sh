@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ============================================================================
-# workbuddy-daily-checkin —— 一键安装脚本
+# buddy-station-checkin —— 一键安装脚本
 #
 # 作用：把本仓库（标准 WorkBuddy Skill）安装到 ~/.workbuddy/skills/ 下，
 #       使其可被 WorkBuddy 客户端识别并调用。
@@ -12,7 +12,7 @@
 set -euo pipefail
 
 # 技能名（须与 SKILL.md 的 name 字段一致）
-SKILL_NAME="workbuddy-daily-checkin"
+SKILL_NAME="buddy-station-checkin"
 # 源目录 = 本脚本所在目录
 SRC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # 目标目录：优先环境变量，否则 ~/.workbuddy/skills
@@ -42,9 +42,9 @@ echo "[ok] 已安装到 $DEST_DIR"
 cat <<'TIP'
 
 下一步（首次使用需配置一次调试端口）：
-  bash "$HOME/.workbuddy/skills/workbuddy-daily-checkin/scripts/setup-debug-port.sh"
+  bash "$HOME/.workbuddy/skills/buddy-station-checkin/scripts/setup-debug-port.sh"
 
 然后完全退出并重新打开 WorkBuddy 一次，即可长期生效。
 验证：
-  bash "$HOME/.workbuddy/skills/workbuddy-daily-checkin/scripts/checkin.sh"
+  bash "$HOME/.workbuddy/skills/buddy-station-checkin/scripts/checkin.sh"
 TIP

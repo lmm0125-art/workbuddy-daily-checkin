@@ -1,5 +1,5 @@
 ---
-name: workbuddy-daily-checkin
+name: buddy-station-checkin
 version: "1.0.0"
 display_name: Buddy加油站每日签到
 display_name_en: WorkBuddy Daily Check-in

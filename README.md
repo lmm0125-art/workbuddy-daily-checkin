@@ -1,6 +1,9 @@
 # workbuddy-daily-checkin
 
 > 领取 WorkBuddy「Buddy加油站」每日签到积分 —— 一个可安装、可自动化的 Agent Skill。
+>
+> 技能技术名（`SKILL.md` 的 `name` / SkillHub 标识）：`buddy-station-checkin`
+> （GitHub 仓库名仍为 `workbuddy-daily-checkin`，链接不变。）
 
 [![Platform](https://img.shields.io/badge/platform-macOS-black)]()
 [![Skill](https://img.shields.io/badge/WorkBuddy-Skill-blue)]()
@@ -61,11 +64,11 @@ bash install.sh
 
 ### 方式 B：手动安装
 
-把整个 `workbuddy-daily-checkin/` 目录放到 `~/.workbuddy/skills/` 下即可：
+把整个 `buddy-station-checkin/` 目录放到 `~/.workbuddy/skills/` 下即可：
 
 ```bash
 git clone https://github.com/lmm0125-art/workbuddy-daily-checkin.git \
-  ~/.workbuddy/skills/workbuddy-daily-checkin
+  ~/.workbuddy/skills/buddy-station-checkin
 ```
 
 ### 方式 C：通过客户端「上传技能」
@@ -77,7 +80,7 @@ git clone https://github.com/lmm0125-art/workbuddy-daily-checkin.git \
 客户端需要以 `--remote-debugging-port=<PORT>` 启动（默认 9222）。
 
 ```bash
-bash ~/.workbuddy/skills/workbuddy-daily-checkin/scripts/setup-debug-port.sh
+bash ~/.workbuddy/skills/buddy-station-checkin/scripts/setup-debug-port.sh
 ```
 
 脚本会写入并尝试加载登录项 `~/Library/LaunchAgents/com.workbuddy.checkin-port.plist`。
@@ -89,7 +92,7 @@ bash ~/.workbuddy/skills/workbuddy-daily-checkin/scripts/setup-debug-port.sh
 
 ```bash
 # 直接运行
-bash ~/.workbuddy/skills/workbuddy-daily-checkin/scripts/checkin.sh
+bash ~/.workbuddy/skills/buddy-station-checkin/scripts/checkin.sh
 ```
 
 或在对话框中直接说：
