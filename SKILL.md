@@ -1,6 +1,11 @@
 ---
 name: workbuddy-daily-checkin
+version: "1.0.0"
+display_name: Buddy加油站每日签到
+display_name_en: WorkBuddy Daily Check-in
 description: 领取 WorkBuddy「Buddy加油站」每日签到积分。当用户要求「签到 / 领积分 / 领取每日积分 / 今天签到了吗 / 查看连续天数和累计积分」，或提到「Buddy加油站」「每日签到」「daily checkin」「buddy station」时应使用本技能。通过 WorkBuddy 客户端调试端口(CDP)在客户端内发起同源请求完成签到，鉴权由客户端自动携带、不会过期；也可用于排查签到失败原因。
+description_zh: 领取 WorkBuddy「Buddy加油站」每日签到积分。当用户要求「签到 / 领积分 / 领取每日积分 / 今天签到了吗 / 查看连续天数和累计积分」，或提到「Buddy加油站」「每日签到」「daily checkin」「buddy station」时应使用本技能。通过 WorkBuddy 客户端调试端口(CDP)在客户端内发起同源请求完成签到，鉴权由客户端自动携带、不会过期；也可用于排查签到失败原因。
+description_en: Claim the daily points of WorkBuddy's built-in "Buddy Station" check-in activity. Use when the user asks to check in, claim daily points, or check the current streak and total points, or mentions "Buddy加油站", "每日签到", "daily checkin" or "buddy station". The check-in request is sent from inside the WorkBuddy client through its local debugging port (CDP), so authentication is carried automatically by the client's own login session and never expires. Also useful for diagnosing check-in failures on macOS.
 metadata:
   agent_created: true
 ---
